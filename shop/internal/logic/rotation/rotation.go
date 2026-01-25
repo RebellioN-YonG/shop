@@ -21,16 +21,15 @@ func New() *sRotation {
 }
 
 func (s *sRotation) Create(ctx context.Context, in model.RotationCreateInput) (out model.RotationCreateOutput, err error) {
+	// html is not allowed
 	if err = ghtml.SpecialCharsMapOrStruct(&in); err != nil {
 		return out, err
 	}
-	lastInsertId, err := dao.RotationInfo.Ctx(ctx).InsertAndGetId()
+	lastInsertId, err := dao.RotationInfo.Ctx(ctx).Data(in).InsertAndGetId()
 	if err != nil {
 		return out, err
 	}
-	return model.RotationCreateOutput{
-		RotationId: int(lastInsertId),
-	}, err
+	return model.RotationCreateOutput{RotationId: int(lastInsertId)}, err
 }
 
 func (s *sRotation) Update(ctx context.Context, in model.RotationUpdateInput) error {
