@@ -20,6 +20,7 @@ var (
 				group.Middleware(ghttp.MiddlewareHandlerResponse)
 				group.Bind(
 					controller.Rotation, // Register Rotation
+					// controller.Admin, // Register Admin
 				)
 			})
 			s.Run()

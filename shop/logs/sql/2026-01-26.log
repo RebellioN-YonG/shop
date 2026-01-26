@@ -1,0 +1,91 @@
+2026-01-26T16:57:31.686+08:00 [DEBU] {b091b24a293c8e180a4dae26e31e0fcf} [ 37 ms] [default] [shop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T16:57:31.717+08:00 [DEBU] {b091b24a293c8e180a4dae26e31e0fcf} [ 31 ms] [default] [shop] [rows:7  ] [txid:1] SHOW FULL COLUMNS FROM `rotation_info`
+2026-01-26T16:57:31.720+08:00 [DEBU] {b091b24a293c8e180a4dae26e31e0fcf} [  3 ms] [default] [shop] [rows:0  ] [txid:1] DELETE FROM `rotation_info` WHERE `id`=0
+2026-01-26T16:57:31.721+08:00 [DEBU] {b091b24a293c8e180a4dae26e31e0fcf} [  1 ms] [default] [shop] [rows:0  ] [txid:1] COMMIT
+2026-01-26T16:58:42.577+08:00 [DEBU] {c0b2c0cd393c8e180b4dae264a241f9f} [ 11 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 16:58:42','2026-01-26 16:58:42') 
+2026-01-26T17:02:37.700+08:00 [DEBU] {10a99d8c703c8e1843aed10e71aae820} [  3 ms] [default] [shop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:02:37.708+08:00 [DEBU] {10a99d8c703c8e1843aed10e71aae820} [  8 ms] [default] [shop] [rows:7  ] [txid:1] SHOW FULL COLUMNS FROM `rotation_info`
+2026-01-26T17:02:37.709+08:00 [DEBU] {10a99d8c703c8e1843aed10e71aae820} [  1 ms] [default] [shop] [rows:0  ] [txid:1] DELETE FROM `rotation_info` WHERE `id`=0
+2026-01-26T17:02:37.710+08:00 [DEBU] {10a99d8c703c8e1843aed10e71aae820} [  1 ms] [default] [shop] [rows:0  ] [txid:1] COMMIT
+2026-01-26T17:07:07.773+08:00 [DEBU] {78872c6eaf3c8e18ee033c53fd3ff03d} [  4 ms] [default] [shop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:07:07.777+08:00 [DEBU] {78872c6eaf3c8e18ee033c53fd3ff03d} [  3 ms] [default] [shop] [rows:7  ] [txid:1] SHOW FULL COLUMNS FROM `rotation_info`
+2026-01-26T17:07:07.778+08:00 [DEBU] {78872c6eaf3c8e18ee033c53fd3ff03d} [  0 ms] [default] [shop] [rows:0  ] [txid:1] DELETE FROM `rotation_info` WHERE `id`=0
+2026-01-26T17:07:07.778+08:00 [DEBU] {78872c6eaf3c8e18ee033c53fd3ff03d} [  0 ms] [default] [shop] [rows:0  ] [txid:1] COMMIT
+2026-01-26T17:07:08.673+08:00 [DEBU] {c89515a4af3c8e18ef033c53ca74fc00} [  0 ms] [default] [shop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:07:08.674+08:00 [DEBU] {c89515a4af3c8e18ef033c53ca74fc00} [  1 ms] [default] [shop] [rows:0  ] [txid:2] DELETE FROM `rotation_info` WHERE `id`=0
+2026-01-26T17:07:08.674+08:00 [DEBU] {c89515a4af3c8e18ef033c53ca74fc00} [  0 ms] [default] [shop] [rows:0  ] [txid:2] COMMIT
+2026-01-26T17:07:57.017+08:00 [DEBU] {40f370e5ba3c8e18f0033c5370806d78} [  3 ms] [default] [shop] [rows:0  ] [txid:3] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:07:57.020+08:00 [DEBU] {40f370e5ba3c8e18f0033c5370806d78} [  3 ms] [default] [shop] [rows:1  ] [txid:3] DELETE FROM `rotation_info` WHERE `id`=16
+2026-01-26T17:07:57.021+08:00 [DEBU] {40f370e5ba3c8e18f0033c5370806d78} [  1 ms] [default] [shop] [rows:0  ] [txid:3] COMMIT
+2026-01-26T17:09:04.628+08:00 [DEBU] {204a5da3ca3c8e18f1033c53ae2c7cb1} [  2 ms] [default] [shop] [rows:0  ] [txid:4] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:09:04.630+08:00 [DEBU] {204a5da3ca3c8e18f1033c53ae2c7cb1} [  2 ms] [default] [shop] [rows:0  ] [txid:4] DELETE FROM `rotation_info` WHERE `id`=16
+2026-01-26T17:09:04.630+08:00 [DEBU] {204a5da3ca3c8e18f1033c53ae2c7cb1} [  0 ms] [default] [shop] [rows:0  ] [txid:4] COMMIT
+2026-01-26T17:09:08.411+08:00 [DEBU] {98b20885cb3c8e18f2033c532dd3670e} [  0 ms] [default] [shop] [rows:0  ] [txid:5] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:09:08.412+08:00 [DEBU] {98b20885cb3c8e18f2033c532dd3670e} [  1 ms] [default] [shop] [rows:0  ] [txid:5] DELETE FROM `rotation_info` WHERE `id`=16
+2026-01-26T17:09:08.412+08:00 [DEBU] {98b20885cb3c8e18f2033c532dd3670e} [  0 ms] [default] [shop] [rows:0  ] [txid:5] COMMIT
+2026-01-26T17:09:09.429+08:00 [DEBU] {000bbbc1cb3c8e18f3033c537d8c88c1} [  0 ms] [default] [shop] [rows:0  ] [txid:6] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T17:09:09.430+08:00 [DEBU] {000bbbc1cb3c8e18f3033c537d8c88c1} [  1 ms] [default] [shop] [rows:0  ] [txid:6] DELETE FROM `rotation_info` WHERE `id`=16
+2026-01-26T17:09:09.430+08:00 [DEBU] {000bbbc1cb3c8e18f3033c537d8c88c1} [  0 ms] [default] [shop] [rows:0  ] [txid:6] COMMIT
+2026-01-26T21:20:55.046+08:00 [DEBU] {78e679cb884a8e182504231514e2ceeb} [ 52 ms] [default] [shop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2026-01-26T21:20:55.056+08:00 [DEBU] {78e679cb884a8e182504231514e2ceeb} [  9 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:20:55','2026-01-26 21:20:55') 
+2026-01-26T21:21:00.457+08:00 [DEBU] {a80223118a4a8e182604231534f652c1} [  1 ms] [default] [shop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:21:00.458+08:00 [DEBU] {a80223118a4a8e182604231534f652c1} [  1 ms] [default] [shop] [rows:1  ] [txid:1] DELETE FROM `rotation_info` WHERE `id`=17
+2026-01-26T21:21:00.458+08:00 [DEBU] {a80223118a4a8e182604231534f652c1} [  0 ms] [default] [shop] [rows:0  ] [txid:1] COMMIT
+2026-01-26T21:25:20.734+08:00 [DEBU] {383690a8c64a8e1827042315687c51ed} [ 39 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:25:20.749+08:00 [DEBU] {383690a8c64a8e1827042315687c51ed} [ 15 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-26T21:25:20.752+08:00 [DEBU] {383690a8c64a8e1827042315687c51ed} [  2 ms] [default] [shop] [rows:3  ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL LIMIT 0,20
+2026-01-26T21:26:02.434+08:00 [DEBU] {20ae1e60d04a8e182804231508b1e54a} [  5 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:26:02.434+08:00 [DEBU] {20ae1e60d04a8e182804231508b1e54a} [  0 ms] [default] [shop] [rows:3  ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2026-01-26T21:26:28.134+08:00 [DEBU] {e86b2d5cd64a8e182a0423154a5a62e4} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:26:28.134+08:00 [DEBU] {e86b2d5cd64a8e182a0423154a5a62e4} [  0 ms] [default] [shop] [rows:3  ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL LIMIT 0,50
+2026-01-26T21:26:39.685+08:00 [DEBU] {b035fd0bd94a8e182b04231588ab0a5e} [ 12 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:26:39','2026-01-26 21:26:39') 
+2026-01-26T21:26:40.263+08:00 [DEBU] {e8c11a2fd94a8e182c042315282755f7} [  2 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:26:40','2026-01-26 21:26:40') 
+2026-01-26T21:26:40.597+08:00 [DEBU] {c0100d43d94a8e182d04231554686331} [  1 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:26:40','2026-01-26 21:26:40') 
+2026-01-26T21:26:41.973+08:00 [DEBU] {60081995d94a8e182e042315022cbbe3} [  0 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:26:41','2026-01-26 21:26:41') 
+2026-01-26T21:26:43.032+08:00 [DEBU] {482926d4d94a8e182f0423151dc5f9e2} [  2 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:26:43','2026-01-26 21:26:43') 
+2026-01-26T21:26:58.039+08:00 [DEBU] {1843ab52dd4a8e1830042315864571d0} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:26:58.040+08:00 [DEBU] {1843ab52dd4a8e1830042315864571d0} [  1 ms] [default] [shop] [rows:5  ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL LIMIT 0,5
+2026-01-26T21:27:21.469+08:00 [DEBU] {608c04c7e24a8e1831042315ed5072a2} [  4 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:27:21','2026-01-26 21:27:21') 
+2026-01-26T21:27:22.332+08:00 [DEBU] {40bd9cfae24a8e183204231574d6b6b9} [  2 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:27:22','2026-01-26 21:27:22') 
+2026-01-26T21:27:23.115+08:00 [DEBU] {b0ee4e29e34a8e1833042315a232eec2} [  1 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:27:23','2026-01-26 21:27:23') 
+2026-01-26T21:27:24.090+08:00 [DEBU] {30aa6a63e34a8e183404231522409c51} [  1 ms] [default] [shop] [rows:1  ] INSERT INTO `rotation_info`(`pic_url`,`link`,`sort`,`created_at`,`updated_at`) VALUES('https://goframe.org/assets/images/QQ_1731655571221-c2f9d404770e21eea958013453bf1316.png','https://goframe.org/quick/scaffold-boost',1,'2026-01-26 21:27:24','2026-01-26 21:27:24') 
+2026-01-26T21:27:34.605+08:00 [DEBU] {d01526d6e54a8e1835042315a48015e1} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:27:34.609+08:00 [DEBU] {d01526d6e54a8e1835042315a48015e1} [  1 ms] [default] [shop] [rows:10 ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2026-01-26T21:28:23.399+08:00 [DEBU] {389f6332f14a8e18360423154c22f582} [  3 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:28:23.402+08:00 [DEBU] {389f6332f14a8e18360423154c22f582} [  2 ms] [default] [shop] [rows:12 ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL LIMIT 0,15
+2026-01-26T21:28:54.008+08:00 [DEBU] {a072ec52f84a8e1837042315f4b8a3e7} [  2 ms] [default] [shop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:28:54.010+08:00 [DEBU] {a072ec52f84a8e1837042315f4b8a3e7} [  1 ms] [default] [shop] [rows:0  ] [txid:2] DELETE FROM `rotation_info` WHERE `id`=17
+2026-01-26T21:28:54.011+08:00 [DEBU] {a072ec52f84a8e1837042315f4b8a3e7} [  0 ms] [default] [shop] [rows:0  ] [txid:2] COMMIT
+2026-01-26T21:29:06.727+08:00 [DEBU] {c8cc1b49fb4a8e18380423151ae7fd31} [  0 ms] [default] [shop] [rows:0  ] [txid:3] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:06.729+08:00 [DEBU] {c8cc1b49fb4a8e18380423151ae7fd31} [  1 ms] [default] [shop] [rows:1  ] [txid:3] DELETE FROM `rotation_info` WHERE `id`=18
+2026-01-26T21:29:06.730+08:00 [DEBU] {c8cc1b49fb4a8e18380423151ae7fd31} [  1 ms] [default] [shop] [rows:0  ] [txid:3] COMMIT
+2026-01-26T21:29:11.720+08:00 [DEBU] {18a5b472fc4a8e18390423155ad5f971} [  1 ms] [default] [shop] [rows:0  ] [txid:4] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:11.721+08:00 [DEBU] {18a5b472fc4a8e18390423155ad5f971} [  1 ms] [default] [shop] [rows:1  ] [txid:4] DELETE FROM `rotation_info` WHERE `id`=19
+2026-01-26T21:29:11.722+08:00 [DEBU] {18a5b472fc4a8e18390423155ad5f971} [  0 ms] [default] [shop] [rows:0  ] [txid:4] COMMIT
+2026-01-26T21:29:15.332+08:00 [DEBU] {e8a00b4afd4a8e183a0423156e25b7ce} [  0 ms] [default] [shop] [rows:0  ] [txid:5] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:15.334+08:00 [DEBU] {e8a00b4afd4a8e183a0423156e25b7ce} [  1 ms] [default] [shop] [rows:1  ] [txid:5] DELETE FROM `rotation_info` WHERE `id`=20
+2026-01-26T21:29:15.335+08:00 [DEBU] {e8a00b4afd4a8e183a0423156e25b7ce} [  0 ms] [default] [shop] [rows:0  ] [txid:5] COMMIT
+2026-01-26T21:29:18.324+08:00 [DEBU] {d07361fcfd4a8e183b0423155db67649} [  0 ms] [default] [shop] [rows:0  ] [txid:6] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:18.325+08:00 [DEBU] {d07361fcfd4a8e183b0423155db67649} [  0 ms] [default] [shop] [rows:1  ] [txid:6] DELETE FROM `rotation_info` WHERE `id`=21
+2026-01-26T21:29:18.326+08:00 [DEBU] {d07361fcfd4a8e183b0423155db67649} [  1 ms] [default] [shop] [rows:0  ] [txid:6] COMMIT
+2026-01-26T21:29:20.979+08:00 [DEBU] {88ea989afe4a8e183c042315426219c8} [  0 ms] [default] [shop] [rows:0  ] [txid:7] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:20.980+08:00 [DEBU] {88ea989afe4a8e183c042315426219c8} [  1 ms] [default] [shop] [rows:1  ] [txid:7] DELETE FROM `rotation_info` WHERE `id`=22
+2026-01-26T21:29:20.981+08:00 [DEBU] {88ea989afe4a8e183c042315426219c8} [  1 ms] [default] [shop] [rows:0  ] [txid:7] COMMIT
+2026-01-26T21:29:24.256+08:00 [DEBU] {4098ce5dff4a8e183d042315b3047da0} [  2 ms] [default] [shop] [rows:0  ] [txid:8] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:24.258+08:00 [DEBU] {4098ce5dff4a8e183d042315b3047da0} [  1 ms] [default] [shop] [rows:1  ] [txid:8] DELETE FROM `rotation_info` WHERE `id`=23
+2026-01-26T21:29:24.259+08:00 [DEBU] {4098ce5dff4a8e183d042315b3047da0} [  1 ms] [default] [shop] [rows:0  ] [txid:8] COMMIT
+2026-01-26T21:29:31.131+08:00 [DEBU] {98bcb6f7004b8e183e042315ce7263f5} [  0 ms] [default] [shop] [rows:0  ] [txid:9] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:31.133+08:00 [DEBU] {98bcb6f7004b8e183e042315ce7263f5} [  1 ms] [default] [shop] [rows:1  ] [txid:9] DELETE FROM `rotation_info` WHERE `id`=24
+2026-01-26T21:29:31.134+08:00 [DEBU] {98bcb6f7004b8e183e042315ce7263f5} [  1 ms] [default] [shop] [rows:0  ] [txid:9] COMMIT
+2026-01-26T21:29:34.418+08:00 [DEBU] {489ea6bb014b8e183f042315f4757c48} [  0 ms] [default] [shop] [rows:0  ] [txid:10] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:34.420+08:00 [DEBU] {489ea6bb014b8e183f042315f4757c48} [  1 ms] [default] [shop] [rows:1  ] [txid:10] DELETE FROM `rotation_info` WHERE `id`=25
+2026-01-26T21:29:34.420+08:00 [DEBU] {489ea6bb014b8e183f042315f4757c48} [  0 ms] [default] [shop] [rows:0  ] [txid:10] COMMIT
+2026-01-26T21:29:38.000+08:00 [DEBU] {50e91d91024b8e18400423156df245fa} [  1 ms] [default] [shop] [rows:0  ] [txid:11] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-26T21:29:38.002+08:00 [DEBU] {50e91d91024b8e18400423156df245fa} [  2 ms] [default] [shop] [rows:1  ] [txid:11] DELETE FROM `rotation_info` WHERE `id`=26
+2026-01-26T21:29:38.002+08:00 [DEBU] {50e91d91024b8e18400423156df245fa} [  0 ms] [default] [shop] [rows:0  ] [txid:11] COMMIT
+2026-01-26T21:30:21.239+08:00 [DEBU] {c07d44a20c4b8e18410423153a51fffa} [  2 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:30:21.240+08:00 [DEBU] {c07d44a20c4b8e18410423153a51fffa} [  0 ms] [default] [shop] [rows:3  ] SELECT * FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:33:15.780+08:00 [DEBU] {c8872545354b8e1825c7d01b91c69a0e} [ 11 ms] [default] [shop] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2026-01-26T21:33:15.781+08:00 [DEBU] {c8872545354b8e1825c7d01b91c69a0e} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `rotation_info` WHERE `deleted_at` IS NULL
+2026-01-26T21:33:15.786+08:00 [DEBU] {c8872545354b8e1825c7d01b91c69a0e} [  2 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-26T21:33:15.787+08:00 [DEBU] {c8872545354b8e1825c7d01b91c69a0e} [  1 ms] [default] [shop] [rows:3  ] SELECT `id`,`pic_url`,`link`,`sort` FROM `rotation_info` WHERE `deleted_at` IS NULL

@@ -13,6 +13,9 @@ import (
 type (
 	IRotation interface {
 		Create(ctx context.Context, in model.RotationCreateInput) (out model.RotationCreateOutput, err error)
+		Update(ctx context.Context, in model.RotationUpdateInput) error
+		Delete(ctx context.Context, id uint) error
+		GetList(ctx context.Context, in model.RotationGetListInput) (out model.RotationGetListOutput, err error)
 	}
 )
 

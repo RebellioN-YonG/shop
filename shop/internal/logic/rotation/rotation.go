@@ -8,6 +8,7 @@ import (
 
 	"github.com/gogf/gf/v2/database/gdb"
 	"github.com/gogf/gf/v2/encoding/ghtml"
+	"github.com/gogf/gf/v2/frame/g"
 )
 
 type sRotation struct{}
@@ -46,4 +47,36 @@ func (s *sRotation) Update(ctx context.Context, in model.RotationUpdateInput) er
 			Update()
 		return err
 	})
+}
+
+func (s *sRotation) Delete(ctx context.Context, id uint) error {
+	return dao.RotationInfo.Ctx(ctx).Transaction(ctx, func(ctx context.Context, tx gdb.TX) error {
+		// del
+		_, err := dao.RotationInfo.Ctx(ctx).Where(g.Map{
+			dao.RotationInfo.Columns().Id: id,
+		}).Unscoped().Delete()
+		return err
+	})
+}
+
+func (s *sRotation) GetList(ctx context.Context, in model.RotationGetListInput) (out model.RotationGetListOutput, err error) {
+	// 1. get gdb.Model
+	m := dao.RotationInfo.Ctx(ctx)
+	//
+	out = model.RotationGetListOutput{
+		Page: in.Page,
+		Size: in.Size,
+	}
+	// query by pages and size
+	litsModel := m.Page(in.Page, in.Size)
+	//
+	out.Total, err = m.Count()
+	if err != nil || out.Total == 0 {
+		return out, err
+	}
+	out.List = make([]model.RotationGetListOutputItem, 0, in.Size)
+	if err := litsModel.Scan(&out.List); err != nil {
+		return out, err
+	}
+	return
 }
