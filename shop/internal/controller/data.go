@@ -13,7 +13,7 @@ type cData struct{}
 func (c *cData) HeadCard(ctx context.Context, req *backend.DataHeadReq) (res *backend.DataHeadRes, err error) {
 	card, err := service.Data().HeadCard(ctx)
 	if err != nil {
-		return &backend.DataHeadRes{}, err
+		return nil, err
 	}
 	return &backend.DataHeadRes{
 		TodayOrderCount: card.TodayOrderCount,
@@ -25,7 +25,7 @@ func (c *cData) HeadCard(ctx context.Context, req *backend.DataHeadReq) (res *ba
 func (c *cData) ECharts(ctx context.Context, req *backend.DataEChartsReq) (out *backend.DataEChartsRes, err error) {
 	echarts, err := service.Data().ECharts(ctx)
 	if err != nil {
-		return &backend.DataEChartsRes{}, err
+		return nil, err
 	}
 	return &backend.DataEChartsRes{
 		OrderTotal:           echarts.OrderTotal,

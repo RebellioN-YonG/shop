@@ -5,7 +5,7 @@ import (
 )
 
 type DataHeadReq struct {
-	g.Meta `path:"/dashborad/head" tags:"Data" method:"post" summary:"execute login request"`
+	g.Meta `path:"/dashborad/head/" tags:"Data" method:"get" summary:"execute login request"`
 }
 
 type DataHeadRes struct {
@@ -15,7 +15,7 @@ type DataHeadRes struct {
 }
 
 type DataEChartsReq struct {
-	g.Meta `path:"/dashborad/echarts" method:"post" tags:"data" summary:"get data for echarts" sunmary:"get data for echarts"`
+	g.Meta `path:"/dashborad/echarts/" method:"get" tags:"data" summary:"get data for echarts" sunmary:"get data for echarts"`
 }
 
 type DataEChartsRes struct {

@@ -22,25 +22,29 @@ var (
 				group.Middleware(
 					service.Middleware().ResponseHandler,
 					service.Middleware().Ctx,
+					service.Middleware().CORS,
 				)
 				// 不需要认证的接口（登录/注册等）
 				group.Bind(
-					controller.Login,
+					controller.Login.Login,
+					controller.Login.RefreshToken,
+					controller.Admin.Create,
 					controller.Data,
 				)
 				// 需要认证的接口
 				group.Group("/", func(group *ghttp.RouterGroup) {
-					group.Middleware(service.Middleware().Auth)
+					group.Middleware(
+						service.Middleware().Auth,
+					)
+
 					group.Bind(
 						controller.Rotation,
-						controller.Admin.Create,
+						controller.Login.Logout,
 						controller.Admin.Update,
 						controller.Admin.Delete,
 						controller.Admin.List,
+						controller.Admin.Info,
 					)
-					group.ALLMap(g.Map{
-						"admin/info": controller.Admin.Info,
-					})
 				})
 			})
 			s.Run()
