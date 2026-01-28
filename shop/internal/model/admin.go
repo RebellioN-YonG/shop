@@ -3,11 +3,11 @@ package model
 import "github.com/gogf/gf/v2/os/gtime"
 
 type AdminCreateUpdateBase struct {
-	Name     string `json:"name" v:"required#username cannot be empty"  dc:"name"`
-	Password string `json:"password" v:"required#password cannot be empty"  dc:"password"`
-	RoleIds  string `json:"role_ids"  dc:"role_ids"`
-	UserSalt string `json:"user_salt"  dc:"user_salt"`
-	IsAdmin  int    `json:"is_admin"  dc:"is_admin"`
+	Name     string
+	Password string
+	RoleIds  string
+	UserSalt string
+	IsAdmin  int
 }
 
 // create admin input

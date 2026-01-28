@@ -39,3 +39,15 @@
 2026-01-28T11:40:43.309+08:00 [DEBU] {f86f59b208c88e18ae71b33a073b463d} [  8 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
 2026-01-28T11:40:43.310+08:00 [DEBU] {f86f59b208c88e18ae71b33a073b463d} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
 2026-01-28T11:40:49.800+08:00 [DEBU] {10afe5360ac88e18af71b33a4aa85ab9} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T17:52:46.563+08:00 [DEBU] {c85b963956dc8e18dd46b865f163a44b} [ 64 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T17:52:46.572+08:00 [DEBU] {c85b963956dc8e18dd46b865f163a44b} [  8 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T17:52:46.575+08:00 [DEBU] {c85b963956dc8e18dd46b865f163a44b} [  2 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T18:00:52.171+08:00 [DEBU] {40b3dd4cc7dc8e18583705399ec2b939} [ 18 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T18:00:52.174+08:00 [DEBU] {40b3dd4cc7dc8e18583705399ec2b939} [  2 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T18:00:52.176+08:00 [DEBU] {40b3dd4cc7dc8e18583705399ec2b939} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T18:10:20.882+08:00 [DEBU] {40f457b74bdd8e18fd0ae7054e8d5f34} [  7 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T18:10:20.886+08:00 [DEBU] {40f457b74bdd8e18fd0ae7054e8d5f34} [  3 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T18:10:20.890+08:00 [DEBU] {40f457b74bdd8e18fd0ae7054e8d5f34} [  3 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T18:22:15.645+08:00 [DEBU] {28636222f2dd8e1859ab5a7241f320e0} [ 11 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T18:22:15.649+08:00 [DEBU] {28636222f2dd8e1859ab5a7241f320e0} [  4 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T18:22:15.651+08:00 [DEBU] {28636222f2dd8e1859ab5a7241f320e0} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1

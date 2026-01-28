@@ -40,7 +40,7 @@ type RefreshTokenRes struct {
 }
 
 type LogoutReq struct {
-	g.Meta `path:"user/logout" method:"post"`
+	g.Meta `path:"/user/logout" method:"post"`
 }
 
 type LogoutRes struct {

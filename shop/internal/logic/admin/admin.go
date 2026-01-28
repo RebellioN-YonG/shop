@@ -119,23 +119,21 @@ func (s *sAdmin) GetList(ctx context.Context, in model.AdminGetListInput) (out m
 	}
 	return
 }
-
-// i: user's login input(username, password), o: user's info (id, name)
 func (s *sAdmin) GetUserByUserNamePassword(ctx context.Context, in model.LoginInput) map[string]interface{} {
-	// 1. check if password is correct
-	var adminInfo entity.AdminInfo
+	//验证账号密码是否正确
+	adminInfo := entity.AdminInfo{}
 	err := dao.AdminInfo.Ctx(ctx).Where(dao.AdminInfo.Columns().Name, in.Name).Scan(&adminInfo)
-	if err != nil || adminInfo.Id == 0 {
+	if err != nil {
 		return nil
 	}
 	if utility.EncryptPassword(in.Password, adminInfo.UserSalt) != adminInfo.Password {
 		return nil
+	} else {
+		return g.Map{
+			"id":       adminInfo.Id,
+			"username": adminInfo.Name,
+		}
 	}
-	return g.Map{
-		"id":   adminInfo.Id,
-		"name": adminInfo.Name,
-	}
-
 }
 
 // i: admin's login input(username, password), o: admin's info (id, name, is_admin, role_ids)
@@ -150,10 +148,8 @@ func (s *sAdmin) GetAdminByNamePassword(ctx context.Context, in model.LoginInput
 		return nil
 	}
 	return g.Map{
-		"id":       adminInfo.Id,
-		"name":     adminInfo.Name,
-		"is_admin": adminInfo.IsAdmin,
-		"role_ids": adminInfo.RoleIds,
+		"id":   adminInfo.Id,
+		"name": adminInfo.Name,
 	}
 }
 

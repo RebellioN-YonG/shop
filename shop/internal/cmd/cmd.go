@@ -18,18 +18,30 @@ var (
 		Func: func(ctx context.Context, parser *gcmd.Parser) (err error) {
 			s := g.Server()
 			s.Group("/backend", func(group *ghttp.RouterGroup) {
+				// 公共中间件（不需要认证）
 				group.Middleware(
-					// ghttp.MiddlewareHandlerResponse,
 					service.Middleware().ResponseHandler,
 					service.Middleware().Ctx,
-					service.Middleware().Auth,
 				)
+				// 不需要认证的接口（登录/注册等）
 				group.Bind(
-					controller.Rotation, // Register Rotation
-					controller.Admin,    // Register Admin
 					controller.Login,
+					controller.Data,
 				)
-				// group.Bind()
+				// 需要认证的接口
+				group.Group("/", func(group *ghttp.RouterGroup) {
+					group.Middleware(service.Middleware().Auth)
+					group.Bind(
+						controller.Rotation,
+						controller.Admin.Create,
+						controller.Admin.Update,
+						controller.Admin.Delete,
+						controller.Admin.List,
+					)
+					group.ALLMap(g.Map{
+						"admin/info": controller.Admin.Info,
+					})
+				})
 			})
 			s.Run()
 			return nil

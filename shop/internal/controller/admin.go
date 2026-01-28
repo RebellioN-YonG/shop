@@ -6,6 +6,8 @@ import (
 	"shop/api/backend"
 	"shop/internal/model"
 	"shop/internal/service"
+
+	"github.com/gogf/gf/v2/util/gconv"
 )
 
 var Admin = cAdmin{}
@@ -58,5 +60,13 @@ func (c *cAdmin) List(ctx context.Context, req *backend.AdminGetListCommonReq) (
 		Total: getListRes.Total,
 		Page:  getListRes.Page,
 		Size:  getListRes.Size,
+	}, nil
+}
+
+func (c *cAdmin) Info(ctx context.Context, req *backend.AdminGetInfoReq) (res *backend.AdminGetInfoRes, err error) {
+	return &backend.AdminGetInfoRes{
+		AdminId: gconv.Int(service.Session().GetUser(ctx).Id),
+		IdKey:   service.Auth().IdentityKey,
+		PayLoad: service.Auth().GetPayload(ctx),
 	}, nil
 }
