@@ -1,0 +1,14 @@
+2026-01-27T21:28:56.896+08:00 [DEBU] {c01b878d8d998e1895eeac5c0b6244aa} [ 47 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-27T21:28:56.915+08:00 [DEBU] {c01b878d8d998e1895eeac5c0b6244aa} [ 18 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel','4a9af87f641642e6a977b92fa76c010d','1','2026-01-27 21:28:56','2026-01-27 21:28:56','7HkquUHyFA',1) 
+2026-01-27T21:39:00.411+08:00 [DEBU] {683d04141a9a8e18b7d44b4ce78438c0} [  9 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-27T21:39:00.417+08:00 [ERRO] {683d04141a9a8e18b7d44b4ce78438c0} [  3 ms] [default] [shop] [rows:0  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel','bb4cd68729e4dca9f9249ed66d3b77a6','1','2026-01-27 21:39:00','2026-01-27 21:39:00','gK034nsx7P',1) 
+Error: Error 1062 (23000): Duplicate entry 'rebel' for key 'admin_info.name_unique' 
+Stack:
+1.  shop/internal/logic/admin.(*sAdmin).Create
+    /Users/rebel/desktop/go-shop/shop/internal/logic/admin/admin.go:39
+2.  shop/internal/controller.(*cAdmin).Create
+    /Users/rebel/desktop/go-shop/shop/internal/controller/admin.go:21
+
+2026-01-27T21:39:45.329+08:00 [DEBU] {1831e089249a8e18b8d44b4c05442eb2} [  3 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel1','3d69051bdfced455ea9ced84820498fe','1','2026-01-27 21:39:45','2026-01-27 21:39:45','3kHY6q4Xvy',1) 
+2026-01-27T21:58:22.022+08:00 [DEBU] {38258189289b8e18d0a14d4af1dadc33} [  9 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-27T21:58:22.026+08:00 [DEBU] {38258189289b8e18d0a14d4af1dadc33} [  3 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel1','05375d807841fbc48fe0ed9f3bfe9831','1','2026-01-27 21:58:22','2026-01-27 21:58:22','WSTDXVP1cv',1) 

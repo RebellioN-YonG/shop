@@ -4,7 +4,7 @@ import "github.com/gogf/gf/v2/os/gtime"
 
 type AdminCreateUpdateBase struct {
 	Name     string `json:"name" v:"required#username cannot be empty"  dc:"name"`
-	PassWord string `json:"password" v:"required#password cannot be empty"  dc:"password"`
+	Password string `json:"password" v:"required#password cannot be empty"  dc:"password"`
 	RoleIds  string `json:"role_ids"  dc:"role_ids"`
 	UserSalt string `json:"user_salt"  dc:"user_salt"`
 	IsAdmin  int    `json:"is_admin"  dc:"is_admin"`
@@ -41,7 +41,7 @@ type AdminGetListOutput struct {
 type AdminGetListOutputItem struct {
 	Id         uint        `json:"id"`
 	Name       string      `json:"name"`
-	PassWord   string      `json:"password"`
+	Password   string      `json:"password"`
 	RoleIds    string      `json:"role_ids"`
 	RoleIdList []int       `json:"role_id_list"`
 	IsAdmin    int         `json:"is_admin"`
@@ -53,6 +53,7 @@ type AdminSearchOutputItem struct {
 	AdminGetListOutputItem
 }
 
+// Admins' Info for JWT auth
 type AdminInfo struct {
 	Id      int    `json:"id"`
 	Name    string `json:"name"`

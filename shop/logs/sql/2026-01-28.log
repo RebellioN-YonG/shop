@@ -1,0 +1,41 @@
+2026-01-28T00:30:02.833+08:00 [DEBU] {987a347c6fa38e1879b671365485899f} [  3 ms] [default] [shop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-28T00:30:02.843+08:00 [DEBU] {987a347c6fa38e1879b671365485899f} [  9 ms] [default] [shop] [rows:7  ] [txid:1] SHOW FULL COLUMNS FROM `rotation_info`
+2026-01-28T00:30:02.855+08:00 [DEBU] {987a347c6fa38e1879b671365485899f} [ 11 ms] [default] [shop] [rows:0  ] [txid:1] DELETE FROM `rotation_info` WHERE `id`=0
+2026-01-28T00:30:02.858+08:00 [DEBU] {987a347c6fa38e1879b671365485899f} [  1 ms] [default] [shop] [rows:0  ] [txid:1] COMMIT
+2026-01-28T00:30:31.437+08:00 [DEBU] {00d0ad2576a38e187ab6713686c5ad2f} [  1 ms] [default] [shop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-28T00:30:31.440+08:00 [DEBU] {00d0ad2576a38e187ab6713686c5ad2f} [  2 ms] [default] [shop] [rows:8  ] [txid:2] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T00:30:31.446+08:00 [DEBU] {00d0ad2576a38e187ab6713686c5ad2f} [  6 ms] [default] [shop] [rows:1  ] [txid:2] DELETE FROM `admin_info` WHERE `id`=29
+2026-01-28T00:30:31.448+08:00 [DEBU] {00d0ad2576a38e187ab6713686c5ad2f} [  2 ms] [default] [shop] [rows:0  ] [txid:2] COMMIT
+2026-01-28T00:32:10.373+08:00 [DEBU] {88eb7b2e8da38e187bb67136e5d6cd3e} [  4 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-28T00:32:10.377+08:00 [DEBU] {88eb7b2e8da38e187bb67136e5d6cd3e} [  4 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T00:32:10.378+08:00 [DEBU] {88eb7b2e8da38e187bb67136e5d6cd3e} [  1 ms] [default] [shop] [rows:3  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info`
+2026-01-28T00:33:48.535+08:00 [DEBU] {50b82209a4a38e18819bc975c2536404} [  6 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T00:33:48.537+08:00 [DEBU] {50b82209a4a38e18819bc975c2536404} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-28T00:33:48.540+08:00 [DEBU] {50b82209a4a38e18819bc975c2536404} [  3 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T00:33:48.543+08:00 [DEBU] {50b82209a4a38e18819bc975c2536404} [  0 ms] [default] [shop] [rows:2  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,2
+2026-01-28T00:34:06.894+08:00 [DEBU] {80f1e64fa8a38e18829bc9758fae1956} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-28T00:34:06.894+08:00 [DEBU] {80f1e64fa8a38e18829bc9758fae1956} [  0 ms] [default] [shop] [rows:3  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,10
+2026-01-28T00:35:45.569+08:00 [DEBU] {006b4b49bfa38e18839bc97530d066f3} [  2 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-28T00:35:45.570+08:00 [DEBU] {006b4b49bfa38e18839bc97530d066f3} [  1 ms] [default] [shop] [rows:3  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,10
+2026-01-28T11:05:14.391+08:00 [DEBU] {c0f9840319c68e184fd554223acf6bcd} [ 50 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T11:05:14.401+08:00 [DEBU] {c0f9840319c68e184fd554223acf6bcd} [  8 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T11:05:14.402+08:00 [DEBU] {c0f9840319c68e184fd554223acf6bcd} [  1 ms] [default] [shop] [rows:0  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel1' LIMIT 1
+2026-01-28T11:05:36.578+08:00 [DEBU] {784e13311ec68e1850d55422e7e6ce41} [  0 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T11:17:59.541+08:00 [DEBU] {2829fd2ccbc68e1852d55422cc365148} [  2 ms] [default] [shop] [rows:0  ] [txid:1] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-28T11:17:59.548+08:00 [DEBU] {2829fd2ccbc68e1852d55422cc365148} [  5 ms] [default] [shop] [rows:0  ] [txid:1] UPDATE `admin_info` SET `name`='rebel2',`password`='111111',`role_ids`='2',`updated_at`='2026-01-28 11:17:59',`user_salt`='',`is_admin`=1 WHERE `id`=0
+2026-01-28T11:17:59.550+08:00 [DEBU] {2829fd2ccbc68e1852d55422cc365148} [  2 ms] [default] [shop] [rows:0  ] [txid:1] COMMIT
+2026-01-28T11:19:02.575+08:00 [DEBU] {189922dad9c68e1853d55422de5e5da3} [  2 ms] [default] [shop] [rows:0  ] [txid:2] BEGIN (IosolationLevel: Default, ReadOnly: false)
+2026-01-28T11:19:02.578+08:00 [DEBU] {189922dad9c68e1853d55422de5e5da3} [  2 ms] [default] [shop] [rows:0  ] [txid:2] UPDATE `admin_info` SET `name`='rebel2',`password`='111111',`role_ids`='2',`updated_at`='2026-01-28 11:19:02',`user_salt`='',`is_admin`=1 WHERE `id`=0
+2026-01-28T11:19:02.578+08:00 [DEBU] {189922dad9c68e1853d55422de5e5da3} [  0 ms] [default] [shop] [rows:0  ] [txid:2] COMMIT
+2026-01-28T11:19:28.568+08:00 [DEBU] {1894e2e6dfc68e1854d55422a7ab9b23} [ 11 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel2','196ee4c103c5dde7017e7548cbc6aa07','2','2026-01-28 11:19:28','2026-01-28 11:19:28','xjKbGT4aBM',1) 
+2026-01-28T11:21:08.424+08:00 [DEBU] {b0091427f7c68e1855d55422c1130231} [  6 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-28T11:21:08.425+08:00 [DEBU] {b0091427f7c68e1855d55422c1130231} [  1 ms] [default] [shop] [rows:4  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,10
+2026-01-28T11:34:34.972+08:00 [DEBU] {58c02ff0b2c78e18f15eb251f4a3d9ed} [ 20 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T11:34:34.978+08:00 [DEBU] {58c02ff0b2c78e18f15eb251f4a3d9ed} [  6 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T11:34:34.980+08:00 [DEBU] {58c02ff0b2c78e18f15eb251f4a3d9ed} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T11:34:43.175+08:00 [DEBU] {50ce5bdab4c78e18f25eb251b2f2649d} [  0 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T11:34:50.140+08:00 [DEBU] {685e7779b6c78e18f35eb251367311f1} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T11:40:43.300+08:00 [DEBU] {f86f59b208c88e18ae71b33a073b463d} [ 17 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-28T11:40:43.309+08:00 [DEBU] {f86f59b208c88e18ae71b33a073b463d} [  8 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-28T11:40:43.310+08:00 [DEBU] {f86f59b208c88e18ae71b33a073b463d} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-28T11:40:49.800+08:00 [DEBU] {10afe5360ac88e18af71b33a4aa85ab9} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
