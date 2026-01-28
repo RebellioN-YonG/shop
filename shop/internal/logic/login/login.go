@@ -10,6 +10,7 @@ import (
 	utility "shop/utility/utils"
 
 	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/gogf/gf/v2/util/gutil"
 )
 
 type sLogin struct{}
@@ -29,7 +30,7 @@ func (s *sLogin) Login(ctx context.Context, in model.LoginInput) error {
 	if err != nil {
 		return err
 	}
-	// gutil.Dump("encrypted password: ", utility.EncryptPassword(in.Name, adminInfo.UserSalt))
+	gutil.Dump("encrypted password: ", utility.EncryptPassword(in.Name, adminInfo.UserSalt))
 	if utility.EncryptPassword(in.Password, adminInfo.UserSalt) != adminInfo.Password {
 		return gerror.New("username or password error")
 	}

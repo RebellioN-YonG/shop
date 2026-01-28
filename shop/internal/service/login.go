@@ -12,6 +12,7 @@ import (
 
 type (
 	ILogin interface {
+		// for jwt
 		Login(ctx context.Context, in model.LoginInput) error
 		Logout(ctx context.Context) error
 	}

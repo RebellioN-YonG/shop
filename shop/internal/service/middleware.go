@@ -17,6 +17,7 @@ type (
 		Ctx(r *ghttp.Request)
 		// 前台系统权限控制，用户必须登录才能访问
 		Auth(r *ghttp.Request)
+		CORS(r *ghttp.Request)
 	}
 )
 

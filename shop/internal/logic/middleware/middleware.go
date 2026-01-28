@@ -1,15 +1,14 @@
 package middleware
 
 import (
+	"shop/internal/model"
 	"shop/internal/service"
+	"shop/utility/response"
 
 	"github.com/gogf/gf/v2/errors/gcode"
 	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
-
-	"shop/internal/model"
-	"shop/utility/response"
 )
 
 type sMiddleware struct {
@@ -48,7 +47,7 @@ func (s *sMiddleware) ResponseHandler(r *ghttp.Request) {
 		// response.JsonExit(r, code.Code(), "", nil)
 		response.JsonExit(r, code.Code(), err.Error(), nil)
 	} else {
-		// response.JsonExit(r, code.Code(), "", res)
+		// response.JsonExit(r, code.Code(), "ok", res)
 		response.JsonExit(r, code.Code(), "ok", res)
 	}
 }
@@ -78,6 +77,11 @@ func (s *sMiddleware) Ctx(r *ghttp.Request) {
 
 // 前台系统权限控制，用户必须登录才能访问
 func (s *sMiddleware) Auth(r *ghttp.Request) {
-	// service.Auth().MiddlewareFunc()(r)
+	service.Auth().MiddlewareFunc()(r)
+	r.Middleware.Next()
+}
+
+func (s *sMiddleware) CORS(r *ghttp.Request) {
+	r.Response.CORSDefault()
 	r.Middleware.Next()
 }

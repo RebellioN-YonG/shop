@@ -15,9 +15,9 @@ type LoginDoReq struct {
 
 // for jwt auth
 type LoginDoRes struct {
-	Token  string      `json:"token"`
-	Expire time.Time   `json:"expire"`
-	Info   interface{} `json:"info"`
+	// Info   interface{} `json:"info"`
+	Token  string    `json:"token"`
+	Expire time.Time `json:"expire"`
 }
 
 // for gtoken
