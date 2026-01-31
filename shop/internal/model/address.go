@@ -7,9 +7,9 @@ import (
 )
 
 type AddressBase struct {
-	ParentId uint   `json:"parent_id"`
-	Name     string `json:"name"`
-	Status   uint8  `json:"status"`
+	ParentId uint   `json:"parent_id" orm:"pid"    dc:"父级id"`
+	Name     string `json:"name"      orm:"name"   dc:"地址名称"`
+	Status   uint8  `json:"status"    orm:"status" dc:"状态"`
 }
 
 type AddAddressInput struct {

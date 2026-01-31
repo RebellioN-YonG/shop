@@ -1,0 +1,155 @@
+2026-01-31T18:57:19.438+08:00 [DEBU] {988a75aa99cb8f181b30ca7a786fc37a} [  7 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-31T18:57:19.443+08:00 [DEBU] {988a75aa99cb8f181b30ca7a786fc37a} [  3 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T18:57:19.447+08:00 [DEBU] {988a75aa99cb8f181b30ca7a786fc37a} [  4 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`status` FROM `address_info` WHERE `pid`=1
+2026-01-31T18:57:38.617+08:00 [DEBU] {400315229ecb8f181c30ca7a8a6b2816} [  0 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`status` FROM `address_info` WHERE `pid`=1
+2026-01-31T19:00:39.909+08:00 [DEBU] {d889dc57c8cb8f181d30ca7a563627c9} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`status` FROM `address_info` WHERE `pid`=1
+2026-01-31T19:06:46.430+08:00 [DEBU] {604407ae1dcc8f181e30ca7a37ffb3c1} [  4 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`status` FROM `address_info` WHERE `pid`=1
+2026-01-31T19:17:14.571+08:00 [DEBU] {50d7d9edafcc8f18b1bb865b8c746d97} [  7 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-31T19:17:14.577+08:00 [DEBU] {50d7d9edafcc8f18b1bb865b8c746d97} [  4 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T19:17:14.580+08:00 [DEBU] {50d7d9edafcc8f18b1bb865b8c746d97} [  3 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`status` FROM `address_info` WHERE `pid`=1
+2026-01-31T19:17:25.874+08:00 [DEBU] {18c92090b2cc8f18b2bb865b15156dae} [  0 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`status` FROM `address_info` WHERE `pid`=1
+2026-01-31T19:19:05.147+08:00 [DEBU] {70c3e5acc9cc8f18babb865bee2c5501} [  5 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `address_info`
+2026-01-31T19:19:05.149+08:00 [DEBU] {70c3e5acc9cc8f18babb865bee2c5501} [  1 ms] [default] [shop] [rows:21 ] SELECT `id`,`name`,`pid`,`status`,`updated_at` FROM `address_info`
+2026-01-31T19:19:20.172+08:00 [DEBU] {f0afc82ccdcc8f18bbbb865b34c46702} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `address_info`
+2026-01-31T19:19:20.172+08:00 [DEBU] {f0afc82ccdcc8f18bbbb865b34c46702} [  0 ms] [default] [shop] [rows:10 ] SELECT `id`,`name`,`pid`,`status`,`updated_at` FROM `address_info` LIMIT 0,10
+2026-01-31T19:41:59.699+08:00 [DEBU] {58f279b609ce8f18f5e7ef39fab31aae} [  6 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T19:41:59.705+08:00 [ERRO] {58f279b609ce8f18f5e7ef39fab31aae} [  3 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`status`,`updated_at`) VALUES('rebel2',0,'2026-01-31 19:41:59') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:42:25.054+08:00 [ERRO] {a851199e0fce8f18f6e7ef393ba984ad} [  1 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`status`,`updated_at`) VALUES('rebel2',0,'2026-01-31 19:42:25') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:42:53.308+08:00 [ERRO] {481a253216ce8f18f7e7ef397ba73fcf} [  1 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`status`,`updated_at`) VALUES('rebel2',0,'2026-01-31 19:42:53') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:42:59.826+08:00 [ERRO] {9068c2b617ce8f18f8e7ef39ece8f4e2} [  1 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`status`,`updated_at`) VALUES('rebel2',0,'2026-01-31 19:42:59') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:43:22.774+08:00 [ERRO] {70f5890e1dce8f18f9e7ef3943c8e7de} [  1 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`status`,`updated_at`) VALUES('rebel2',0,'2026-01-31 19:43:22') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:45:17.474+08:00 [DEBU] {00d3e3c237ce8f18784b9512d31fb5bb} [  5 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T19:45:17.475+08:00 [ERRO] {00d3e3c237ce8f18784b9512d31fb5bb} [  1 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`status`,`updated_at`) VALUES('rebel2',0,'2026-01-31 19:45:17') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:48:32.519+08:00 [DEBU] {38fe7a2c65ce8f18a9858507cd24cdff} [  4 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T19:48:32.522+08:00 [ERRO] {38fe7a2c65ce8f18a9858507cd24cdff} [  0 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`pid`,`status`,`updated_at`) VALUES('rebel2',0,0,'2026-01-31 19:48:32') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:48:42.839+08:00 [ERRO] {881ee79367ce8f18aa8585079b015377} [  0 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`pid`,`status`,`updated_at`) VALUES('rebel2',233666,0,'2026-01-31 19:48:42') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:50:22.149+08:00 [ERRO] {a8d41bb37ece8f18ab858507730fc274} [  2 ms] [default] [shop] [rows:0  ] INSERT INTO `address_info`(`name`,`pid`,`status`,`updated_at`) VALUES('rebel2',233666,0,'2026-01-31 19:50:22') 
+Error: Error 1364 (HY000): Field 'id' doesn't have a default value 
+Stack:
+1.  shop/internal/logic/address.(*sAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/logic/address/address.go:20
+2.  shop/internal/controller.(*cAddress).Add
+    /Users/rebel/desktop/go-shop/shop/internal/controller/address.go:17
+3.  shop/internal/logic/middleware.(*sMiddleware).CORS
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:86
+4.  shop/internal/logic/middleware.(*sMiddleware).Ctx
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:75
+5.  shop/internal/logic/middleware.(*sMiddleware).ResponseHandler
+    /Users/rebel/desktop/go-shop/shop/internal/logic/middleware/middleware.go:30
+
+2026-01-31T19:52:43.831+08:00 [DEBU] {30eeedaf9fce8f18ac8585075c78eeba} [  4 ms] [default] [shop] [rows:1  ] INSERT INTO `address_info`(`name`,`pid`,`status`,`updated_at`) VALUES('rebel2',233666,0,'2026-01-31 19:52:43') 
+2026-01-31T19:56:08.415+08:00 [DEBU] {38de0052cfce8f18ae8585072085c5ff} [  5 ms] [default] [shop] [rows:0  ] UPDATE `address_info` SET `id`=100231,`name`='rebel2',`pid`=233666999,`updated_at`='2026-01-31 19:56:08' WHERE `id`=100231
+2026-01-31T19:56:36.364+08:00 [DEBU] {781f29d4d5ce8f18af85850781404ba1} [  0 ms] [default] [shop] [rows:0  ] UPDATE `address_info` SET `id`=100231,`name`='rebel2',`pid`=233233,`updated_at`='2026-01-31 19:56:36' WHERE `id`=100231
+2026-01-31T19:57:22.335+08:00 [DEBU] {285d4f88e0ce8f18b0858507102c8e1e} [  1 ms] [default] [shop] [rows:0  ] UPDATE `address_info` SET `id`=100231,`name`='rebel2',`pid`=233233,`status`=1,`updated_at`='2026-01-31 19:57:22' WHERE `id`=100231
+2026-01-31T19:58:11.633+08:00 [DEBU] {60f0a802ecce8f18b18585070b8b568c} [  1 ms] [default] [shop] [rows:0  ] UPDATE `address_info` SET `id`=233666,`name`='rebel2',`pid`=233233,`status`=1,`updated_at`='2026-01-31 19:58:11' WHERE `id`=233666
+2026-01-31T20:00:24.424+08:00 [DEBU] {70bd44ed0acf8f187a7b1b0888426fa7} [  5 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T20:00:24.426+08:00 [DEBU] {70bd44ed0acf8f187a7b1b0888426fa7} [  1 ms] [default] [shop] [rows:0  ] UPDATE `address_info` SET `id`=233666,`name`='rebel2',`pid`=233233,`status`=1,`updated_at`='2026-01-31 20:00:24' WHERE `id`=233666
+2026-01-31T20:01:25.260+08:00 [DEBU] {a0f4721719cf8f18a3103c38049257cd} [  5 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T20:01:25.262+08:00 [DEBU] {a0f4721719cf8f18a3103c38049257cd} [  1 ms] [default] [shop] [rows:0  ] UPDATE `address_info` SET `id`=233666,`name`='rebel2',`pid`=233233,`status`=1,`updated_at`='2026-01-31 20:01:25' WHERE `id`=233666
+2026-01-31T20:03:22.685+08:00 [DEBU] {d0f8766e34cf8f18ae33eb4b56fa5442} [  5 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `address_info`
+2026-01-31T20:03:22.690+08:00 [DEBU] {d0f8766e34cf8f18ae33eb4b56fa5442} [  2 ms] [default] [shop] [rows:1  ] UPDATE `address_info` SET `id`=110231,`name`='rebel2',`pid`=666999,`status`=1,`updated_at`='2026-01-31 20:03:22' WHERE `id`=110231
+2026-01-31T20:04:13.257+08:00 [DEBU] {b00ce33440cf8f18b233eb4b279aada4} [  3 ms] [default] [shop] [rows:1  ] DELETE FROM `address_info` WHERE `id`=110231

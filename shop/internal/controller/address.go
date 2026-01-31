@@ -40,7 +40,7 @@ func (c *cAddress) Update(ctx context.Context, req *backend.UpdateAddressReq) (r
 	if err != nil {
 		return nil, err
 	}
-	return &backend.UpdateAddressRes{Id: req.Id}, nil
+	return nil, nil
 }
 
 // Delete 删除地址

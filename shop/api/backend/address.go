@@ -19,7 +19,7 @@ type AddAddressRes struct {
 
 type UpdateAddressReq struct {
 	g.Meta `path:"/address" tags:"Address" method:"put" summary:"update address"`
-	Id     int `json:"id" v:"required#address id cannot be empty" dc:"address id"`
+	Id     int `json:"id" dc:"id"`
 	AddressBase
 }
 
@@ -28,7 +28,7 @@ type UpdateAddressRes struct {
 }
 
 type DeleteAddressReq struct {
-	g.Meta `path:"/address" tags:"Address" method:"delete" summary:"delete address"`
+	g.Meta `path:"/address" method:"delete" summary:"delete address"`
 	Id     int `json:"id" v:"required#address id cannot be empty" dc:"address id"`
 }
 
@@ -36,7 +36,7 @@ type DeleteAddressRes struct {
 }
 
 type PageAddressReq struct {
-	g.Meta `path:"/address" tags:"Address" method:"get" summary:"page address"`
+	g.Meta `path:"/address/page" method:"get" summary:"page address"`
 	CommonPaginationReq
 }
 

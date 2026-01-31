@@ -23,7 +23,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `address_info`;
 CREATE TABLE `address_info`  (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `pid` int(11) NOT NULL,
   `status` int(11) NOT NULL DEFAULT 0,

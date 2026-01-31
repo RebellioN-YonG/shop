@@ -37,10 +37,11 @@ var (
 					// service.Middleware().Auth,
 					)
 					group.Bind(
-						controller.Admin.List,
-						controller.Rotation,
 						controller.Role,
+						controller.Address,
+						controller.Rotation,
 						controller.Login.Logout,
+						controller.Admin.List,
 						controller.Admin.Update,
 						controller.Admin.Delete,
 						controller.Admin.Info,

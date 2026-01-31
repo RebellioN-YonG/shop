@@ -5,6 +5,7 @@ import (
 	"shop/internal/consts"
 	"shop/internal/dao"
 	"shop/internal/model"
+	"shop/internal/model/entity"
 	"shop/internal/service"
 )
 
@@ -55,12 +56,13 @@ func (s *sAddress) Page(ctx context.Context, in *model.PageAddressInput) (out *m
 
 	// 获取总数
 	out.Total, err = m.Count()
-	if err != nil {
+	if err != nil || out.Total == 0 {
 		return nil, err
 	}
 
 	// 分页查询
-	var list []model.CityAddressListOutputItem
+	out.List = make([]entity.AddressInfo, 0, in.Size)
+	var list []entity.AddressInfo
 	err = m.Page(in.Page, in.Size).Scan(&list)
 	if err != nil {
 		return nil, err
