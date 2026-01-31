@@ -30,7 +30,7 @@ func (c *cAdmin) Create(ctx context.Context, req *backend.AdminReq) (res *backen
 }
 
 func (c *cAdmin) Update(ctx context.Context, req *backend.AdminUpdateReq) (res *backend.AdminUpdateRes, err error) {
-	err = service.Admin().Update(ctx, model.AdminUpdateInput{
+	err = service.Admin().Update(ctx, &model.AdminUpdateInput{
 		Id: req.AdminId,
 		AdminCreateUpdateBase: model.AdminCreateUpdateBase{
 			Name:     req.Name,
@@ -48,7 +48,7 @@ func (c *cAdmin) Delete(ctx context.Context, req *backend.AdminDeleteReq) (res *
 }
 
 func (c *cAdmin) List(ctx context.Context, req *backend.AdminGetListCommonReq) (res *backend.AdminGetListCommonRes, err error) {
-	getListRes, err := service.Admin().GetList(ctx, model.AdminGetListInput{
+	getListRes, err := service.Admin().GetList(ctx, &model.AdminGetListInput{
 		Page: req.Page,
 		Size: req.Size,
 	})
@@ -65,7 +65,7 @@ func (c *cAdmin) List(ctx context.Context, req *backend.AdminGetListCommonReq) (
 
 func (c *cAdmin) Info(ctx context.Context, req *backend.AdminGetInfoReq) (res *backend.AdminGetInfoRes, err error) {
 	return &backend.AdminGetInfoRes{
-		AdminId: gconv.Int(service.Session().GetUser(ctx).Id),
+		Id:      gconv.Int(service.Session().GetUser(ctx).Id),
 		IdKey:   service.Auth().IdentityKey,
 		PayLoad: service.Auth().GetPayload(ctx),
 	}, nil

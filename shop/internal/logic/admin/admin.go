@@ -26,7 +26,7 @@ func New() *sAdmin {
 	return &sAdmin{}
 }
 
-func (s *sAdmin) Create(ctx context.Context, in *model.AdminCreateInput) (out model.AdminCreateOutput, err error) {
+func (s *sAdmin) Create(ctx context.Context, in *model.AdminCreateInput) (out *model.AdminCreateOutput, err error) {
 	// html is not allowed
 	if err = ghtml.SpecialCharsMapOrStruct(in); err != nil {
 		return out, err
@@ -40,10 +40,10 @@ func (s *sAdmin) Create(ctx context.Context, in *model.AdminCreateInput) (out mo
 	if err != nil {
 		return out, err
 	}
-	return model.AdminCreateOutput{AdminId: int(lastInsertId)}, err
+	return &model.AdminCreateOutput{AdminId: int(lastInsertId)}, err
 }
 
-func (s *sAdmin) Update(ctx context.Context, in model.AdminUpdateInput) error {
+func (s *sAdmin) Update(ctx context.Context, in *model.AdminUpdateInput) error {
 	return dao.AdminInfo.Transaction(ctx, func(ctx context.Context, tx gdb.TX) error {
 		// html is not allowed
 		if err := ghtml.SpecialCharsMapOrStruct(&in); err != nil {
@@ -69,11 +69,11 @@ func (s *sAdmin) Delete(ctx context.Context, id uint) error {
 	})
 }
 
-func (s *sAdmin) GetList(ctx context.Context, in model.AdminGetListInput) (out model.AdminGetListOutput, err error) {
+func (s *sAdmin) GetList(ctx context.Context, in *model.AdminGetListInput) (out *model.AdminGetListOutput, err error) {
 	// 1. get gdb.Model
 	m := dao.AdminInfo.Ctx(ctx)
 	// 2.instantiate resp
-	out = model.AdminGetListOutput{
+	out = &model.AdminGetListOutput{
 		Page: in.Page,
 		Size: in.Size,
 	}
@@ -119,7 +119,7 @@ func (s *sAdmin) GetList(ctx context.Context, in model.AdminGetListInput) (out m
 	}
 	return
 }
-func (s *sAdmin) GetUserByUserNamePassword(ctx context.Context, in model.LoginInput) map[string]interface{} {
+func (s *sAdmin) GetUserByUserNamePassword(ctx context.Context, in *model.LoginInput) map[string]interface{} {
 	//验证账号密码是否正确
 	adminInfo := entity.AdminInfo{}
 	err := dao.AdminInfo.Ctx(ctx).Where(dao.AdminInfo.Columns().Name, in.Name).Scan(&adminInfo)
@@ -137,7 +137,7 @@ func (s *sAdmin) GetUserByUserNamePassword(ctx context.Context, in model.LoginIn
 }
 
 // i: admin's login input(username, password), o: admin's info (id, name, is_admin, role_ids)
-func (s *sAdmin) GetAdminByNamePassword(ctx context.Context, in model.LoginInput) map[string]interface{} {
+func (s *sAdmin) GetAdminByNamePassword(ctx context.Context, in *model.LoginInput) map[string]interface{} {
 	// 1. check if password is correct
 	var adminInfo entity.AdminInfo
 	err := dao.AdminInfo.Ctx(ctx).Where(dao.AdminInfo.Columns().Name, in.Name).Scan(&adminInfo)
@@ -154,7 +154,7 @@ func (s *sAdmin) GetAdminByNamePassword(ctx context.Context, in model.LoginInput
 }
 
 // i: admin's name, o: admin's info (id, name, is_admin, role_ids)
-func (s *sAdmin) GetAdminByNamePasswordRoles(ctx context.Context, in model.LoginInput) map[string]interface{} {
+func (s *sAdmin) GetAdminByNamePasswordRoles(ctx context.Context, in *model.LoginInput) map[string]interface{} {
 	var adminInfo entity.AdminInfo
 	err := dao.AdminInfo.Ctx(ctx).Where("name", in.Name).Scan(&adminInfo)
 	if err != nil {

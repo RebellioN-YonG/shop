@@ -18,14 +18,14 @@ type AdminRes struct {
 
 type AdminDeleteReq struct {
 	g.Meta  `path:"/admin/delete" tags:"Admin" method:"delete" summary:"delete a admin"`
-	AdminId uint `json:"admin_id" v:"min:1#select a admin to delete" dc:"admin_id"`
+	AdminId uint `json:"admin_id" v:"min:1#select a admin to delete" dc:"admin's id"`
 }
 
 type AdminDeleteRes struct{}
 
 type AdminUpdateReq struct {
 	g.Meta   `path:"/admin/update" tags:"Admin" method:"post" summary:"update a admin"`
-	AdminId  uint   `json:"admin_id" v:"min:1#select a admin to update" dc:"admin_id"`
+	AdminId  uint   `json:"admin_id" v:"min:1#select a admin to update" dc:"admin's id"`
 	Name     string `json:"name" v:"required#username cannot be empty"  dc:"name"`
 	Password string `json:"password" v:"required#password cannot be empty"  dc:"password"`
 	RoleIds  string `json:"role_ids"  dc:"role_ids"`
@@ -54,7 +54,7 @@ type AdminGetInfoReq struct {
 }
 
 type AdminGetInfoRes struct {
-	AdminId int         `json:"admin_id"`
+	Id      int         `json:"id"`
 	IdKey   string      `json:"id_key"`
 	PayLoad interface{} `json:"payload"`
 }

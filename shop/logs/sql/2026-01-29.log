@@ -1,0 +1,66 @@
+2026-01-29T18:51:57.562+08:00 [DEBU] {70710893252e8f18fb6ea04e6e5fa7d5} [ 52 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T18:51:57.580+08:00 [DEBU] {70710893252e8f18fb6ea04e6e5fa7d5} [ 13 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-29T18:51:57.593+08:00 [DEBU] {70710893252e8f18fb6ea04e6e5fa7d5} [ 12 ms] [default] [shop] [rows:0  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-29T18:55:37.492+08:00 [DEBU] {308b14ca582e8f18fc6ea04efb41042e} [ 23 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel','596a0ce85fe435badfa975be74e08d59','2','2026-01-29 18:55:37','2026-01-29 18:55:37','gyh8MXIENv',1) 
+2026-01-29T18:56:39.044+08:00 [DEBU] {50a64720672e8f18fd6ea04e24f071aa} [  4 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-29T18:56:41.558+08:00 [DEBU] {b0996cb6672e8f18fe6ea04e80824853} [  1 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-29T19:05:51.715+08:00 [DEBU] {482778cde72e8f18036fa04eee4f1f25} [ 11 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel1','c14ae647570c082ce2e87b3082d86da0','1','2026-01-29 19:05:51','2026-01-29 19:05:51','4fhOdKf57D',1) 
+2026-01-29T19:06:06.623+08:00 [DEBU] {b8b2e146eb2e8f18046fa04e7fd88184} [  2 ms] [default] [shop] [rows:1  ] INSERT INTO `admin_info`(`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin`) VALUES('rebel2','b1909ed6893cde980f4283fb9aaa3e1a','1','2026-01-29 19:06:06','2026-01-29 19:06:06','Nc1gQbOa1p',1) 
+2026-01-29T19:46:53.283+08:00 [DEBU] {900245ee24318f1837ef7233a6d4ccb2} [ 11 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T19:46:53.290+08:00 [DEBU] {900245ee24318f1837ef7233a6d4ccb2} [  7 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-29T19:46:53.292+08:00 [DEBU] {900245ee24318f1837ef7233a6d4ccb2} [  2 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-29T19:50:45.421+08:00 [DEBU] {60273ffb5a318f18c6717e5ded857a13} [  7 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T19:50:45.426+08:00 [DEBU] {60273ffb5a318f18c6717e5ded857a13} [  3 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-29T19:50:45.428+08:00 [DEBU] {60273ffb5a318f18c6717e5ded857a13} [  2 ms] [default] [shop] [rows:1  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` WHERE `name`='rebel' LIMIT 1
+2026-01-29T20:04:56.571+08:00 [DEBU] {d818bf2721328f18d5717e5d156e190c} [  7 ms] [default] [shop] [rows:15 ] SHOW FULL COLUMNS FROM `order_info`
+2026-01-29T20:04:56.577+08:00 [DEBU] {d818bf2721328f18d5717e5d156e190c} [  5 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2026-01-29 00:00:00' AND '2026-01-29 23:59:59') AND (id)
+2026-01-29T20:05:04.388+08:00 [DEBU] {90702bfa22328f18d6717e5dea0a9228} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `order_info` WHERE (`created_at` BETWEEN '2026-01-29 00:00:00' AND '2026-01-29 23:59:59') AND (id)
+2026-01-29T20:08:39.137+08:00 [DEBU] {d8efcdf954328f187345e811bb16f80a} [  4 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-29T20:08:39.138+08:00 [DEBU] {d8efcdf954328f187345e811bb16f80a} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-29T20:08:39.140+08:00 [DEBU] {d8efcdf954328f187345e811bb16f80a} [  2 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T20:08:39.141+08:00 [DEBU] {d8efcdf954328f187345e811bb16f80a} [  0 ms] [default] [shop] [rows:5  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,20
+2026-01-29T20:10:32.753+08:00 [DEBU] {5899ca6d6f328f18cb8a961f87c14c12} [  5 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-29T20:10:32.755+08:00 [DEBU] {5899ca6d6f328f18cb8a961f87c14c12} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-29T20:10:32.758+08:00 [DEBU] {5899ca6d6f328f18cb8a961f87c14c12} [  2 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T20:10:32.759+08:00 [DEBU] {5899ca6d6f328f18cb8a961f87c14c12} [  1 ms] [default] [shop] [rows:5  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,20
+2026-01-29T20:11:07.241+08:00 [DEBU] {8035c97577328f18ce8a961fdead6398} [  3 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-29T20:11:07.242+08:00 [DEBU] {8035c97577328f18ce8a961fdead6398} [  0 ms] [default] [shop] [rows:5  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,20
+2026-01-29T20:12:48.544+08:00 [DEBU] {68b8b50b8f328f18ecaddb77f0a1afa5} [  5 ms] [default] [shop] [rows:8  ] SHOW FULL COLUMNS FROM `admin_info`
+2026-01-29T20:12:48.544+08:00 [DEBU] {68b8b50b8f328f18ecaddb77f0a1afa5} [  0 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `admin_info`
+2026-01-29T20:12:48.546+08:00 [DEBU] {68b8b50b8f328f18ecaddb77f0a1afa5} [  2 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T20:12:48.546+08:00 [DEBU] {68b8b50b8f328f18ecaddb77f0a1afa5} [  0 ms] [default] [shop] [rows:5  ] SELECT `id`,`name`,`password`,`role_ids`,`created_at`,`updated_at`,`user_salt`,`is_admin` FROM `admin_info` LIMIT 0,20
+2026-01-29T20:12:52.341+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  3 ms] [default] [shop] [rows:6  ] SHOW FULL COLUMNS FROM `role_info`
+2026-01-29T20:12:52.342+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  1 ms] [default] [shop] [rows:2  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at`,`deleted_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2026-01-29T20:12:52.343+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `role_info` WHERE `deleted_at` IS NULL
+2026-01-29T20:12:52.345+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  2 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2026-01-29T20:12:52.348+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  3 ms] [default] [shop] [rows:7  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=1
+2026-01-29T20:12:52.354+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  6 ms] [default] [shop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2026-01-29T20:12:52.357+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  2 ms] [default] [shop] [rows:7  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (`id` IN (1,2,3,4,5,6,7)) AND `deleted_at` IS NULL
+2026-01-29T20:12:52.358+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  0 ms] [default] [shop] [rows:2  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=2
+2026-01-29T20:12:52.359+08:00 [DEBU] {087629ee8f328f18edaddb773d7758ee} [  0 ms] [default] [shop] [rows:2  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (`id` IN (2,3)) AND `deleted_at` IS NULL
+2026-01-29T20:21:39.432+08:00 [DEBU] {20e0eba60a338f1846e1942e96b1e03a} [  8 ms] [default] [shop] [rows:6  ] SHOW FULL COLUMNS FROM `role_info`
+2026-01-29T20:21:39.444+08:00 [DEBU] {20e0eba60a338f1846e1942e96b1e03a} [ 11 ms] [default] [shop] [rows:1  ] INSERT INTO `role_info`(`name`,`desc`,`created_at`,`updated_at`) VALUES('rebel','cb','2026-01-29 20:21:39','2026-01-29 20:21:39') 
+2026-01-29T20:22:15.852+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  4 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T20:22:15.853+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  0 ms] [default] [shop] [rows:3  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at`,`deleted_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2026-01-29T20:22:15.854+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `role_info` WHERE `deleted_at` IS NULL
+2026-01-29T20:22:15.859+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  3 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2026-01-29T20:22:15.864+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  3 ms] [default] [shop] [rows:7  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=1
+2026-01-29T20:22:15.867+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  2 ms] [default] [shop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2026-01-29T20:22:15.868+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  1 ms] [default] [shop] [rows:7  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (`id` IN (1,2,3,4,5,6,7)) AND `deleted_at` IS NULL
+2026-01-29T20:22:15.869+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  0 ms] [default] [shop] [rows:2  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=2
+2026-01-29T20:22:15.870+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  1 ms] [default] [shop] [rows:2  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (`id` IN (2,3)) AND `deleted_at` IS NULL
+2026-01-29T20:22:15.871+08:00 [DEBU] {2031032213338f1847e1942eba1358c6} [  1 ms] [default] [shop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=6
+2026-01-29T20:51:42.222+08:00 [DEBU] {38599562ae348f183bf5ca0b549a840c} [ 56 ms] [default] [shop] [rows:6  ] SHOW FULL COLUMNS FROM `role_info`
+2026-01-29T20:51:42.231+08:00 [DEBU] {38599562ae348f183bf5ca0b549a840c} [  7 ms] [default] [shop] [rows:1  ] INSERT INTO `role_info`(`name`,`desc`,`created_at`,`updated_at`) VALUES('1','cb','2026-01-29 20:51:42','2026-01-29 20:51:42') 
+2026-01-29T20:53:08.904+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [ 10 ms] [default] [shop] [rows:25 ] SHOW TABLES
+2026-01-29T20:53:08.906+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  1 ms] [default] [shop] [rows:4  ] SELECT `id`,`name`,`desc`,`created_at`,`updated_at`,`deleted_at` FROM `role_info` WHERE `deleted_at` IS NULL LIMIT 0,10
+2026-01-29T20:53:08.907+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  1 ms] [default] [shop] [rows:1  ] SELECT COUNT(1) FROM `role_info` WHERE `deleted_at` IS NULL
+2026-01-29T20:53:08.910+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  3 ms] [default] [shop] [rows:5  ] SHOW FULL COLUMNS FROM `role_permission_info`
+2026-01-29T20:53:08.913+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  2 ms] [default] [shop] [rows:7  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=1
+2026-01-29T20:53:08.916+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  3 ms] [default] [shop] [rows:6  ] SHOW FULL COLUMNS FROM `permission_info`
+2026-01-29T20:53:08.917+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  1 ms] [default] [shop] [rows:7  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (`id` IN (1,2,3,4,5,6,7)) AND `deleted_at` IS NULL
+2026-01-29T20:53:08.919+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  1 ms] [default] [shop] [rows:2  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=2
+2026-01-29T20:53:08.920+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  1 ms] [default] [shop] [rows:2  ] SELECT `id`,`name`,`path`,`created_at`,`updated_at`,`deleted_at` FROM `permission_info` WHERE (`id` IN (2,3)) AND `deleted_at` IS NULL
+2026-01-29T20:53:08.921+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  1 ms] [default] [shop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=6
+2026-01-29T20:53:08.922+08:00 [DEBU] {80692994c2348f183df5ca0bc8e2bde8} [  0 ms] [default] [shop] [rows:0  ] SELECT `id`,`role_id`,`permission_id`,`created_at`,`updated_at` FROM `role_permission_info` WHERE `role_id`=7
+2026-01-29T21:00:17.968+08:00 [DEBU] {d8db147a26358f1841f5ca0b86229f79} [ 14 ms] [default] [shop] [rows:1  ] UPDATE `role_info` SET `name`='cb',`desc`='(‿   ‿)   )   ( (‿ω‿)   ꪊꪻ⊂',`updated_at`='2026-01-29 21:00:17' WHERE (`id`=7) AND `deleted_at` IS NULL

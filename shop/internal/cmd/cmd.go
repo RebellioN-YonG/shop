@@ -34,15 +34,15 @@ var (
 				// 需要认证的接口
 				group.Group("/", func(group *ghttp.RouterGroup) {
 					group.Middleware(
-						service.Middleware().Auth,
+					// service.Middleware().Auth,
 					)
-
 					group.Bind(
+						controller.Admin.List,
 						controller.Rotation,
+						controller.Role,
 						controller.Login.Logout,
 						controller.Admin.Update,
 						controller.Admin.Delete,
-						controller.Admin.List,
 						controller.Admin.Info,
 					)
 				})

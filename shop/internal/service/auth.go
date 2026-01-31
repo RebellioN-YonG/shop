@@ -81,7 +81,7 @@ func Authenticator(ctx context.Context) (interface{}, error) {
 		return "", err
 	}
 
-	if user := Admin().GetAdminByNamePasswordRoles(ctx, in); user != nil {
+	if user := Admin().GetAdminByNamePasswordRoles(ctx, &in); user != nil {
 		return user, nil
 	}
 
