@@ -40,6 +40,8 @@ var (
 						controller.Role,
 						controller.Address,
 						controller.Rotation,
+						controller.Position,
+						controller.Permission,
 						controller.Login.Logout,
 						controller.Admin.List,
 						controller.Admin.Update,
