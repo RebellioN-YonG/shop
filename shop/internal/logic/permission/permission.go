@@ -82,8 +82,8 @@ func (s *sPermission) GetList(ctx context.Context, in *model.PermissionGetListIn
 	return
 }
 
-// GetPathByRoleId 根据角色ID获取权限列表
-func (s *sPermission) GetPathByRoleId(ctx context.Context, RoleIds []int) ([]string, error) {
+// GetPathsByRoleIds 根据角色ID获取权限列表
+func (s *sPermission) GetPathsByRoleIds(ctx context.Context, RoleIds []int) ([]string, error) {
 	if len(RoleIds) == 0 {
 		return []string{}, nil
 	}
@@ -128,5 +128,6 @@ func (s *sPermission) GetPathByRoleId(ctx context.Context, RoleIds []int) ([]str
 	for _, p := range permissionList {
 		paths = append(paths, p.Path)
 	}
+	g.Log().Debug(ctx, "GetPathsByRoleIds - paths:", paths)
 	return paths, nil
 }

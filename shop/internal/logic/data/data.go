@@ -24,7 +24,6 @@ func New() *sData {
 
 func (s *sData) HeadCard(ctx context.Context) (out *model.HeadDataOutput, err error) {
 	return &model.HeadDataOutput{
-		// todo
 		TodayOrderCount: TodayOrderCount(ctx),
 		DAU:             utility.RandInt(200),
 		ConversionRate:  utility.RandInt(80),

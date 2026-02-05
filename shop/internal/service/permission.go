@@ -20,8 +20,8 @@ type (
 		Delete(ctx context.Context, id uint) error
 		// GetList 获取角色列表（含权限）
 		GetList(ctx context.Context, in *model.PermissionGetListInput) (out *model.PermissionGetListOutput, err error)
-		// GetPathByRoleId 根据角色ID获取权限列表
-		GetPathByRoleId(ctx context.Context, RoleIds []int) ([]string, error)
+		// GetPathsByRoleIds 根据角色ID获取权限列表
+		GetPathsByRoleIds(ctx context.Context, RoleIds []int) ([]string, error)
 	}
 )
 
